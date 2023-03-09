@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landinfo</title>
+  <meta name="description"
+    content="Se nyckelinformation om världens länder sorterat på kontinent. Lär mer om länders huvudstäder, flagga, population samt språk.">
+  <link rel="stylesheet" href="global.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="topnav">
+      <a href="index.html">Starsida</a>
+      <a href="QuizEurope.html">Europa Quiz</a>
+      <a href="search.html">Sök Länder</a>
+      <a href="landinfo.html">Landinfo</a>
+      <a href="chart.html">Grafik</a>
+      <a href="cities.html">Cities</a>
+    </div>
+  </header>
+
+  <input id="world" class=selectbutton type="button" value="Världen" />
+  <input id="europe" class=selectbutton type="button" value="Europa" />
+  <input id="americas" class=selectbutton type="button" value="Amerika" />
+  <input id="africa" class=selectbutton type="button" value="Afrika" />
+  <input id="asia" class=selectbutton type="button" value="Asien" />
+  <input id="oceania" class=selectbutton type="button" value="Oceanien" />
+  <button id="newSearchButton" class="selectbutton" type="button" onclick=clearContent()>Rensa</button>
+
+  <main class=auto-grid>
+  </main>
+
+  <script src="landinfo.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,197 @@
+main {
+  min-height: 90vh;
+  background-color: rgb(151, 210, 228);
+  background-image: url(media/3950.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+  font-size: 125%;
+}
+
+
+header {
+  background-color: azure;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+}
+
+article p {
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  max-height: 25%;
+  background-color: rgb(173, 216, 230)
+}
+
+.topnav {
+  overflow: hidden;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.topnav a {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  padding: 12px 14px;
+  font-size: 125%;
+}
+
+.topnav a:hover {
+  background-color: #f0ffff;
+  color: black;
+  font-size: 110%;
+  text-decoration: underline;
+}
+
+.linkbutton {
+  background-color: #0c124b;
+  border-radius: 10px;
+  color: #ffffff;
+  padding: 5px;
+  margin-top: 30px;
+  font-size: 110%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.linkbutton:hover {
+  background-color: #1c2791;
+}
+
+.selectbutton {
+  background-color: #0c124b;
+  border-radius: 10px;
+  color: #ffffff;
+  padding: 10px;
+  margin-top: 40px;
+  margin-bottom: 5px;
+  font-size: 110%;
+  align-items: center;
+}
+
+.selectbutton:hover {
+  background-color: #1c2791;
+}
+
+.selectbutton:active {
+  background-color: #6671d6;
+  box-shadow: 0 5px rgb(0, 0, 0);
+  transform: translateY(8px);
+}
+
+.gamebutton {
+  background-color: #111a6e;
+  border-radius: 10px;
+  color: #ffffff;
+  padding: 5px;
+  margin-top: 30px;
+  font-size: 110%;
+  align-items: center;
+}
+
+#country {
+  border-radius: 10px;
+  padding: 10px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.game-window {
+  background-color: black;
+  color: white;
+  opacity: 0.8;
+  padding: 25px;
+  margin: 75px 30px 50px 30px;
+  max-width: 500px;
+  text-align: center;
+}
+
+.game-window img {
+  transition: 1s ease;
+}
+
+.game-window img:hover {
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.3);
+  transition: 1s ease;
+}
+
+.chart-window {
+  background-color: rgb(33, 30, 30);
+  color: white;
+  opacity: 0.8;
+  padding: 25px;
+  margin: 75px 30px 50px 30px;
+  position: relative;
+  width: 80vw
+}
+
+.countryBox {
+  background-color: black;
+  color: white;
+  opacity: 0.8;
+  padding: 20px;
+  margin: 50px 20px 30px 20px;
+  max-width: 260px;
+
+}
+
+#countryInfo {
+  display: flex;
+}
+
+.countryBox>img {
+  max-width: 150px;
+  transition: 1s ease;
+}
+
+.countryBox img:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: 1s ease;
+}
+
+
+div.chart-window {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+@media (min-width: 500px) {
+  main {
+    display: flex;
+  }
+
+  .graphs {
+    display: flex;
+    flex-direction: column;
+  }
+
+
+
+  .auto-grid {
+    --auto-grid-min-size: 16rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+    grid-gap: 1rem;
+  }
+
+}

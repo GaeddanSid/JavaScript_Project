@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sök länder</title>
+  <meta name="description"
+    content="Sök fram och se nyckelinformation om världens länder. Lär mer om länders huvudstad, flagga, population samt språk.">
+  <link rel="stylesheet" href="global.css">
+</head>
+
+<header>
+  <div class="topnav">
+    <a href="index.html">Starsida</a>
+    <a href="QuizEurope.html">Europa Quiz</a>
+    <a href="search.html">Sök Länder</a>
+    <a href="landinfo.html">Landinfo</a>
+    <a href="chart.html">Grafik</a>
+    <a href="cities.html">Cities</a>
+  </div>
+</header>
+
+
+<body>
+
+  <main class=auto-grid>
+    <div class=game-window>
+      <h2>Sök länder efter namn</h2>
+      <form id="searchform">
+        <input id="country" type="text" placeholder="Skriv ett land">
+        <button id="searchbutton" class="selectbutton" type="button">SÖK</button>
+        <button id="newSearchButton" class="selectbutton" type="button">Rensa</button>
+      </form>
+    </div>
+
+    <div id="searchResults" class=game-window>
+      <h2>Senaste sökningar</h2>
+    </div>
+  </main>
+
+  <script src="search.js"></script>
+
+</body>
+
+</html>
